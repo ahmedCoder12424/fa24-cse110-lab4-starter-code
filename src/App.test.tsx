@@ -111,7 +111,7 @@ test('verify budget', () => {
   const expense_value_output_2 = within(output2[0] as HTMLElement).getByText("$2000");
 
   expect(expense_name_output_2).toBeNull();
-  expect(expense_value_output_2).toBeInTheDocument();
+  expect(expense_value_output_2).toBeNull();
 
   const budget_2 = screen.getByText("Budget: 10000");
   const remaining_2 = screen.getByText("Remaining: $7900");
